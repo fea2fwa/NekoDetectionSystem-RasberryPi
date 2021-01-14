@@ -18,7 +18,7 @@ CAMERA_BUF_FLUSH_NUM = 6
 
 
 # DJANGO関連パラメタ
-DJANGO_NOTIFY_API = 'http://160.251.17.38/api/cats/'
+DJANGO_NOTIFY_API = 'http://<IP Addrress or host name>/api/cats/'
 MINIMUM_DJANGO_INTERVAL = 3 * 60
 
 # 人工知能モデルへ入力する画像の調整パラメタ
@@ -48,10 +48,6 @@ CLASS_LABELS = {0: 'background',
                 81: 'sink', 82: 'refrigerator', 84: 'book', 85: 'clock',
                 86: 'vase', 87: 'scissors', 88: 'teddy bear', 89: 'hair drier',
                 90: 'toothbrush'}
-
-# .netrcからトークンを読み込む
-# secrets = netrc.netrc('/home/pi/.netrc')
-# username, account, line_notify_token = secrets.authenticators('notify-api')
 
 # 引数の定義
 ap = argparse.ArgumentParser()
